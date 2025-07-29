@@ -1,0 +1,23 @@
+spring:
+  application:
+    name:  steam-market-mcp-server
+  ai:
+    mcp:
+      server:
+        name: steam-market-mcp-server
+        version:  1.0.0
+        type: SYNC
+        sse-message-endpoint: /mcp/message
+
+steam:
+  market:
+    name: steam-market-client
+    url: https://steamcommunity.com/
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          service: DEBUG
+          client: DEBUG
