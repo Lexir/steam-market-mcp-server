@@ -20,7 +20,7 @@ public interface SteamMarketClient {
                                                           @RequestParam("item_nameid") Long itemMameId,
                                                           @RequestParam(value = "norender", defaultValue = "1") Integer norender);
 
-    @GetMapping("/search/render/")
+    @GetMapping("/market/search/render/")
     SteamMarketSearchResponse searchItems(
             @RequestParam(value = "query", defaultValue = "") String query,
             @RequestParam(value = "start", defaultValue = "0") Integer start,

@@ -57,12 +57,12 @@ public class SteamMarketService {
                     "Returns paginated results with names, prices and images."
     )
     public SteamMarketSearchResponse searchItems(
-            @ToolParam(description = "Search item (e.g., 'AK', 'Case')") String query,
-            @ToolParam(description = "Pagination start index (default 0)") Integer start,
-            @ToolParam(description = "Number of items per page (default 10)") Integer count,
-            @ToolParam(description = "Search in descriptions (0/1)") Integer searchDescriptions,
-            @ToolParam(description = "Sort column: 'popular', 'price', 'name'") String sortColumn,
-            @ToolParam(description = "Sort direction: 'asc' or 'desc'") String sortDir,
+            @ToolParam(description = "Search item (e.g., 'AK', 'Case')", required = false) String query,
+            @ToolParam(description = "Pagination start index (default 0)", required = false) Integer start,
+            @ToolParam(description = "Number of items per page (default 10)", required = false) Integer count,
+            @ToolParam(description = "Search in descriptions (0/1)", required = false) Integer searchDescriptions,
+            @ToolParam(description = "Sort column: 'popular', 'price', 'name'", required = false) String sortColumn,
+            @ToolParam(description = "Sort direction: 'asc' or 'desc'", required = false) String sortDir,
             @ToolParam(description = "Application id ('730'= CS2 or 570= Dota2)") Integer appId
     ) {
         return steamMarketClient.searchItems(

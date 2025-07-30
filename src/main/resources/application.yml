@@ -4,11 +4,16 @@ spring:
   ai:
     mcp:
       server:
+        enabled: true
         name: steam-market-mcp-server
         version:  1.0.0
         type: SYNC
         sse-message-endpoint: /mcp/message
-
+        capabilities:
+          tool: true
+  reactor:
+    debug-agent:
+      enabled: false
 steam:
   market:
     name: steam-market-client

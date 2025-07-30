@@ -28,7 +28,8 @@ public class SteamMarketSearchResponse {
         private SteamAssetDescription steamAssetDescription;
     }
 
-    public class SteamAssetDescription {
+    @Data
+    public static class SteamAssetDescription {
         @JsonProperty("appid")
         private int appId;
         @JsonProperty("classid")
