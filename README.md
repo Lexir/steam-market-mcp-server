@@ -4,8 +4,7 @@
 
 Для получения дополнительной информации обратитесь к справочной документации [MCP Server Boot Starter](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html) reference documentation.
 
-![Screenshot](image/n8n-workflow.png)
-
+<img width="1326" height="541" alt="n8n-workflow" src="https://github.com/user-attachments/assets/9cf843e5-755e-4827-85df-364f5edba0bf" />
 
 ## В docker-compose можете найти такие компоненты
 1. postgres (база даных для n8n)
